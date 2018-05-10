@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="js.js"></script>
+	<meta name="viewport" content="width=1280px, initial-scale=1.0">
+</head>
+<body>
+	<div class="Header">
+		<div class="logo">
+			<b>Tesnus</b>
+		</div>
+		<div class="postlogo">
+			<ul>
+				<a class="onlyHead"><li > Шапки</li></a>
+				<a class="onlyPrevAva"><li >Превью и аватарки</li></a>
+				<li>Инфо</li>
+			</ul>
+		</div> 
+	</div><br>
+	<div class="postheader">
+		<h1>Сайт по заказу<br>Шапок для каналов <br> Обработки фото <br> превью и сайтов</h1>
+	</div><br>
+	<div class="last">
+		<p>Последние работы</p>
+	</div><br>
+	<div class="clearfix">
+		<div class="first">
+				<div class="left">	
+					<img src="img/1.jpg" alt="">
+					<h3>Превью для канала <br> MysticalTavern</h3>
+				</div>
+				<div class="right">	
+				 <div class="onlyLeft">	
+					<button class="only onlyL onlyPrev">ТОЛЬКО <br> Превью</button> <br>
+					<button class="only onlyL onlyHead">ТОЛЬКО 
+					<br>Шапки</button> <br>
+					<button class="only onlyL onlyAva">ТОЛЬКО 
+					<br>Аватарки</button><br>
+				 </div>	
+					<a href=""><button class="only onlyR">Художник</button></a> <br>
+					<a class=" " href=""><button style="" class="only onlyR">Создатель сайта</button></a> <br>
+					<a class=" " href=""><button style="" class="only onlyR">Отзывы</button></a>	
+					<button class="only onlyL return" style="width: 405px; font-size: 35px;">
+						Вернуть всё наместо
+					</button>		
+			</div>
+		</div><br>
+	</div><br>
+	<div class="clearfix">
+	<div class="second shapka">
+		<img src="img/2.jpg" alt="">
+		<h3>Шапка для канала MaxVell</h3>
+	</div></div><br>
+	<div class="clearfix">
+	<div class="avatar">
+			<div class="ava">
+				<img src="img/3.jpg" alt="">
+				<h3>Аватарка для <br>KotGame</h3>
+			</div>
+			<div class="ava">
+				<img src="img/4.jpg" alt="">
+				<h3>Аватарка для<br> Maxvell</h3>
+			</div>
+			<div class="ava">
+				<img src="img/5.jpg" alt="">
+				<h3>Аватарка для <br>Кильки</h3>
+			</div>
+	</div></div><br><br>
+	<div class="clearfix">
+	<div class="shapka">
+		<img src="img/6.jpg" alt="">
+		<h3>Шапка для канала MistycalTavern</h3>
+	</div></div>
+	<div class="change_photo">
+		<h3 style="font-size: 40px;">Обработка фото</h3>
+		<div class="photo photoBefore">
+			<img class="photo photoBefore" src="img/8.jpg" alt="ДО">
+			<h3>ДО</h3>
+		</div>
+		<div class="photo photoAfter">
+			<img class="photoAfter" src="img/9.jpg" alt="ПОСЛЕ">
+			<h3>ПОСЛЕ</h3>
+		</div>
+	</div>
+	<div class="footer">
+	<div class="content">
+		
+		<div class="" style="float: left;">
+			Что вам нужно?
+		<ul>
+			<li><a href="">Сайт</a></li>
+			<li><a href="">Шапка/аватарка/превью</a></li>
+			<li><a href="">Обработка фотографий</a></li>
+		</ul>
+		</div>
+		<div class="" style="float: right;">
+			Наши контакты:
+				<ul>
+					<li>vk -> https://vk.com/marsmelo</li>
+					<li>telegram -> @littlestasik</li>
+					<li>instagram -> @little.stasik</li>
+					<li></li>
+				</ul>
+		</div>
+	</div>
+	</div>
+	<script>
+		$('.onlyPrev').click(function(){
+			$('.shapka').fadeOut();
+			$('.ava').fadeOut();
+			$('.change_photo').fadeOut();
+		})
+		$('.onlyHead').click(function(){
+			$('.shapka').fadeIn();
+			$('.ava').fadeOut();
+			$('.change_photo').fadeOut();
+		})
+		$('.onlyAva').click(function(){
+			$('.ava').fadeIn();
+			$('.shapka').fadeOut();
+			$('.change_photo').fadeOut();
+		})
+		$('.return').click(function(){
+			$('.ava').fadeIn();
+			$('.shapka').fadeIn();
+			$('.change_photo').fadeIn();
+		})
+		$('.onlyPrevAva').click(function(){
+			$('.shapka').fadeOut();
+			$('.change_photo').fadeOut();
+		})
+
+	</script>
+</body>
+</html>
