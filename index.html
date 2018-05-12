@@ -6,9 +6,10 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="js.js"></script>
 	<meta name="viewport" content="width=1280px, initial-scale=1.0">
+	<link rel="stylesheet" href="animate.css">
 </head>
 <body>
-	<div class="Header">
+	<div class="mov animated slideInUp Header">
 		<div class="logo">
 			<b>Tesnus</b>
 		</div>
@@ -20,14 +21,15 @@
 			</ul>
 		</div> 
 	</div><br>
-	<div class="postheader">
+	<div class="animated postheader">
 		<h1>Сайт по заказу<br>Шапок для каналов <br> Обработки фото <br> превью и сайтов</h1>
 	</div><br>
-	<div class="last">
+	<div class="mov animated last">
 		<p>Последние работы</p>
-	</div><br>
-	<div class="clearfix">
-		<div class="first">
+	</div>
+	
+		<div class="mov animated first">
+		<div class="clearfix">
 				<div class="left">	
 					<img src="img/1.jpg" alt="">
 					<h3>Превью для канала <br> MysticalTavern</h3>
@@ -40,22 +42,24 @@
 					<button class="only onlyL onlyAva">ТОЛЬКО 
 					<br>Аватарки</button><br>
 				 </div>	
-					<a href=""><button class="only onlyR">Художник</button></a> <br>
-					<a class=" " href=""><button style="" class="only onlyR">Создатель сайта</button></a> <br>
-					<a class=" " href=""><button style="" class="only onlyR">Отзывы</button></a>	
+					<a href="https://vk.com/marsmelo"><button class="only onlyR">Художник</button></a> <br>
+					<a  href="https://vk.com/id136877166"><button style="" class="only onlyR">Создатель сайта</button></a> <br>
+					<!--<a onclick="alert('Временно не работает')"><button style="" class="only onlyR">Отзывы</button></a>-->	
 					<button class="only onlyL return" style="width: 405px; font-size: 35px;">
 						Вернуть всё наместо
 					</button>		
 			</div>
 		</div><br>
-	</div><br>
+	</div>
+	
+	<div class="mov animated second shapka">
 	<div class="clearfix">
-	<div class="second shapka">
 		<img src="img/2.jpg" alt="">
 		<h3>Шапка для канала MaxVell</h3>
 	</div></div><br>
+	
+	<div class="mov animated avatar">
 	<div class="clearfix">
-	<div class="avatar">
 			<div class="ava">
 				<img src="img/3.jpg" alt="">
 				<h3>Аватарка для <br>KotGame</h3>
@@ -68,14 +72,14 @@
 				<img src="img/5.jpg" alt="">
 				<h3>Аватарка для <br>Кильки</h3>
 			</div>
-	</div></div><br><br>
+	</div></div><br>
 	<div class="clearfix">
-	<div class="shapka">
+	<div class="mov animated shapka">
 		<img src="img/6.jpg" alt="">
-		<h3>Шапка для канала MistycalTavern</h3>
-	</div></div>
-	<div class="change_photo">
-		<h3 style="font-size: 40px;">Обработка фото</h3>
+		<h3>Шапка для канала MystycalTavern</h3>
+	</div></div><br>
+	<div class="mov animated change_photo">
+		<h3 style="font-size: 40px; margin-bottom: 30px;">Обработка фото</h3>
 		<div class="photo photoBefore">
 			<img class="photo photoBefore" src="img/8.jpg" alt="ДО">
 			<h3>ДО</h3>
@@ -84,8 +88,8 @@
 			<img class="photoAfter" src="img/9.jpg" alt="ПОСЛЕ">
 			<h3>ПОСЛЕ</h3>
 		</div>
-	</div>
-	<div class="footer">
+	</div><br>
+	<div class="mov animated footer">
 	<div class="content">
 		
 		<div class="" style="float: left;">
@@ -108,6 +112,17 @@
 	</div>
 	</div>
 	<script>
+		var height = $(window).height();
+
+		  $(window).scroll(function() {
+		    $('.mov').each(function(){
+		      var imagePos = $(this).offset().top;
+		      var topOfWindow = $(window).scrollTop();
+		      if (imagePos < topOfWindow+height) {
+		        $(this).addClass('rollIn');
+		      }
+		    });
+		  });
 		$('.onlyPrev').click(function(){
 			$('.shapka').fadeOut();
 			$('.ava').fadeOut();

@@ -133,25 +133,30 @@ h3{
 	margin: auto
 }
 .ava img{
-	width: calc(93vw/3 - 15px);
-	height: calc(93vw/3 - 15px);
+	width: calc(93vw/3 - 25px);
+	height: calc(93vw/3 - 25px);
+	margin-left: 15px;
 }
 .shapka{
-	padding-top: 50px;
-	width: 100%;
+	background-color: #EEEEEE;
+	padding: 35px 0;
+	width: 93%;
 	margin: auto;
 	
 }
 .shapka img{
-	width: 100%;
+	width: calc(93vw - 80px);
+	margin-left:30px; 
 }
 .avatar{
-	padding-top: 50px;
+	width: 93%;
+	background-color: #EEEEEE;
+	padding: 35px 0;
 }
 .first{
 	width: 93%;
 	margin: auto;
-	padding-bottom: 100px;
+	
 }
 .right a{
 	width: 200px;
@@ -169,17 +174,19 @@ h3{
 	float: left;
 }
 .change_photo{
-	padding-top: 70px; 
+	padding: 35px 0; 
 	width: 93%;
 	margin: auto;
+	background-color:#EEEEEE; 
 }
 .change_photo h3{
-	padding-bottom: 35px;
+	margin-top: 20px;
 }
 .change_photo img{
 	display: inline-block;
-	padding-right: 15px;
-	width: calc((93vw/2) - 30px);
+	margin-left: 20px;
+
+	width: calc((93vw/2) - 40px);
 
 }
 .change_photo .photo{
