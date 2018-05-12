@@ -102,5 +102,43 @@
 		</div>
 	</div>
 	</div>
+	<script>
+		var height = $(window).height();
+
+		  $(window).scroll(function() {
+		    $('.mov').each(function(){
+		      var imagePos = $(this).offset().top;
+		      var topOfWindow = $(window).scrollTop();
+		      if (imagePos < topOfWindow+height) {
+		        $(this).addClass('rollIn');
+		      }
+		    });
+		  });
+		$('.onlyPrev').click(function(){
+			$('.shapka').fadeOut();
+			$('.ava').fadeOut();
+			$('.change_photo').fadeOut();
+		})
+		$('.onlyHead').click(function(){
+			$('.shapka').fadeIn();
+			$('.ava').fadeOut();
+			$('.change_photo').fadeOut();
+		})
+		$('.onlyAva').click(function(){
+			$('.ava').fadeIn();
+			$('.shapka').fadeOut();
+			$('.change_photo').fadeOut();
+		})
+		$('.return').click(function(){
+			$('.ava').fadeIn();
+			$('.shapka').fadeIn();
+			$('.change_photo').fadeIn();
+		})
+		$('.onlyPrevAva').click(function(){
+			$('.shapka').fadeOut();
+			$('.change_photo').fadeOut();
+		})
+
+	</script>
 </body>
 </html>
